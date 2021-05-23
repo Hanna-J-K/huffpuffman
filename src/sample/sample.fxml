@@ -1,8 +1,21 @@
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.layout.GridPane?>
+<?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.control.Label?>
-<GridPane fx:controller="sample.Controller"
-          xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10">
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <AnchorPane fx:id="display" layoutX="300.0" prefHeight="600.0" prefWidth="800.0">
+         <children>
+            <Button fx:id="btnSelectFile" layoutX="101.0" layoutY="27.0" mnemonicParsing="false" onAction="#ButtonSelectFileAction" text="Wybierz wiadomość" />
+            <Button fx:id="btnReadMessage" layoutX="575.0" layoutY="27.0" mnemonicParsing="false" onAction="#ButtonReadMessageAction" text="Zapisz wiadomość" />
+         </children>
+      </AnchorPane>
+   </children>
 </GridPane>
